@@ -268,3 +268,15 @@ a:hover {
     height: 22px;
     margin-right: 4px;
 }
+
+#copyButton {
+    background-image: url('/home/klever/Documents/repo/pf/assets/img/icons/discord.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Add any other styling you want */
+    border: none;
+}
+
+#copyButton span {
+    display: none;
+}

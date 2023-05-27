@@ -21,25 +21,20 @@
                 <img class="content__hello-img" src="assets/img/avatar.png" alt="Avatar">
                 <div class="content__hello-text">
                     <span class="content__name">
-                        <a href="/"> Hey, I'm Sviatoslav.</a>
+                        <a href="/"> Hey, I'm Rashit.</a>
                     </span>
-                    <span class="content__description">This is my template <br/> for simple and beauty portfolio</span>
+                    <br/>
+                    <span class="content__description">And this is my simple portfolio</span>
                     <nav class="content__social">
-                        <a href="#link" target="_blank" class="content__social-item">
-                            <img src="assets/img/icons/twitter.svg" alt="Twitter">
-                            <span>Twitter</span>
-                        </a>
-                        <a href="#link" target="_blank" class="content__social-item">
+                        <a href="https://www.facebook.com/profile.php?id=100013308702205" 
+                        target="_blank" class="content__social-item">
                             <img src="assets/img/icons/facebook.svg" alt="Facebook">
                             <span>Facebook</span>
                         </a>
-                        <a href="#link" target="_blank" class="content__social-item">
+                        <a href="https://www.linkedin.com/in/rashit-akhmatnurov-90387a276/" 
+                        target="_blank" class="content__social-item">
                             <img src="assets/img/icons/in.svg" alt="LinkedIn">
                             <span>LinkedIn</span>
-                        </a>
-                        <a href="#link" target="_blank" class="content__social-item">
-                            <img src="assets/img/icons/telegram.svg" alt="Telegram">
-                            <span>Telegram</span>
                         </a>
                     </nav>
                 </div>
@@ -47,30 +42,9 @@
             <div class="content__main">
                 <div class="content__main-item">
                     <div class="main-item__description">
-                        <p>This is the main page with examples of the blocks. You can combine them in the way you want.</p>
-                        <p>Check <a href="/example">the example</a> page to see how these blocks could be combined.</p>
+                        <p>This is the main page of my portfolio. From this page you can navigate anywhere you need.</p>
                     </div>
                 </div>
-                <h1 class="content__about-header">Icons</h1>
-                <div class="content__main-item">
-                    <a href="#" class="content__social-item">
-                        <img src="assets/img/icons/discord.svg" alt="discord">
-                        <img src="assets/img/icons/dribbble.svg" alt="dribbble">
-                        <img src="assets/img/icons/facebook.svg" alt="facebook">
-                        <img src="assets/img/icons/github.svg" alt="github">
-                        <img src="assets/img/icons/in.svg" alt="linkedin">
-                        <img src="assets/img/icons/instagram.svg" alt="instagram">
-                        <img src="assets/img/icons/medium.svg" alt="medium">
-                        <img src="assets/img/icons/skype.svg" alt="skype">
-                        <img src="assets/img/icons/telegram.svg" alt="telegram">
-                        <img src="assets/img/icons/twitch.svg" alt="twitch">
-                        <img src="assets/img/icons/twitter.svg" alt="twitter">
-                        <img src="assets/img/icons/vk.svg" alt="vk">
-                        <img src="assets/img/icons/whatsapp.svg" alt="whatsapp">
-                        <img src="assets/img/icons/youtube.svg" alt="youtube">
-                    </a>
-                </div>
-                <h1 class="content__about-header">Blocks</h1>
                 <h2 class="content__subheader">Text</h2>
                 <div class="content__main-item">
                     <div class="main-item__description">
@@ -147,7 +121,7 @@
         </div>
         <div class="footer">
             <div>
-                <span>© Sviatoslav Zhilichev</span>
+                <span>© Rashit Akhmatnurov</span>
             </div>
             <div>
                 <nav class="footer__social">
@@ -155,14 +129,34 @@
                         <img src="assets/img/icons/twitter.svg" alt="Twitter">
                     </a>
                     <a href="#link" target="_blank" class="footer__social-item">
-                        <img src="assets/img/icons/facebook.svg" alt="Facebook">
+                        <img src="assets/img/icons/github.svg" alt="Github">
                     </a>
-                    <a href="#link" target="_blank" class="footer__social-item">
-                        <img src="assets/img/icons/in.svg" alt="LinkedIn">
-                    </a>
-                    <a href="#link" target="_blank" class="footer__social-item">
-                        <img src="assets/img/icons/telegram.svg" alt="Telegram">
-                    </a>
+                    <body>
+                        <button id="copyButton">Discord</button>
+                        <script>
+                        document.getElementById("copyButton").addEventListener("click", function() {
+                            var textToCopy = "Klever#5136";
+                    
+                            // Create a temporary input element
+                            var tempInput = document.createElement("input");
+                            tempInput.setAttribute("value", textToCopy);
+                            document.body.appendChild(tempInput);
+                    
+                            // Select the text within the input element
+                            tempInput.select();
+                            tempInput.setSelectionRange(0, 99999); // For mobile devices
+                    
+                            // Copy the selected text to the clipboard
+                            document.execCommand("copy");
+                    
+                            // Remove the temporary input element
+                            document.body.removeChild(tempInput);
+                    
+                            // Alert or perform any other action to notify the user
+                            alert("Text copied: " + textToCopy);
+                        });
+                        </script>
+                    </body>
                 </nav>
             </div>
         </div>
